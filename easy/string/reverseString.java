@@ -1,17 +1,18 @@
 public class reverseString {
-    public static void main(String[] args) {
+    public String r() {
         String s = "abdsjk";
         int k = 2;
-        StringBuilder sb = new StringBuilder(s);
-        if( sb.length() < k ){
-            sb.reverse().toString();
-            System.out.println(sb);
+        // StringBuilder sb = new StringBuilder(s);
+        if( s.length() < k ){
+            return new StringBuilder(s).reverse().toString();
+            // System.out.println(s);
         }
-        else if( sb.length() < 2 * k ){
-            sb.substring(0, k).
+        else if( s.length() < 2 * k ){
+            return new StringBuilder(s.substring(0, k)).reverse().toString() + s.substring(k);
         }
-        else{
-
+        else {
+            return new StringBuilder(s.substring(0, k)).reverse().toString() +
+                   s.substring(k, 2 * k) + r(s.substring(2 * k), k);
         }
     }
 }
