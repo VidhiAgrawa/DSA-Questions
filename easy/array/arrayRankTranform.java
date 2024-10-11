@@ -4,7 +4,6 @@ class arrayRankTransform{
     public int[] arrayRankTransform(int[] arr) {
         int nums[] = Arrays.copyOf(arr, arr.length);
         Arrays.sort(arr);
-        // System.out.println("/nSorted Array:-");
         for( int j = 0; j < arr.length; j++ ){
             System.out.print(arr[j] + "\t");
         }
