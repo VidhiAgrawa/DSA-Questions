@@ -4,7 +4,7 @@ public class SearchInRotatedArrsay {
     public static void main(String[] args) {
         SearchInRotatedArrsay obj = new SearchInRotatedArrsay();
         
-        int nums[] = { 4,5,6,7,0,1,2 };
+        int nums[] = { 4,5,6,7,0,1,2 ,3};
         // int left = 0;
         // int right = nums.length - 1;
 
@@ -15,7 +15,7 @@ public class SearchInRotatedArrsay {
         System.out.println("index:- " + res);
     
     }
-    public int sort(int nums[]) {
+    public int FindPivot(int nums[]) {
         int lower = 0;
         int upper = nums.length - 1;
         while( lower < upper ){
@@ -49,7 +49,7 @@ public class SearchInRotatedArrsay {
         // return 0;
     }
     public int search(int nums[] , int target) {
-        int pivot = sort(nums);
+        int pivot = FindPivot(nums);
         int result = Binary(target, 0, pivot - 1, nums);
         if( result == -1 ){
             return Binary(target, pivot, nums.length - 1, nums);
