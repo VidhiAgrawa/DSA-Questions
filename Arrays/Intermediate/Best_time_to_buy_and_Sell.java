@@ -2,7 +2,7 @@ public class Best_time_to_buy_and_Sell {
     public static void main(String[] args) {
         int arr[] = { 7, 3, 5, 9, 6, 1 };
         int min = minimum(arr);
-        // System.out.println(min);
+        System.out.println(min);
         int maxPro = maxProfit(arr, min);
         System.out.println(maxPro);
         
