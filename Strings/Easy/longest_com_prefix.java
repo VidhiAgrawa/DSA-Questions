@@ -1,8 +1,8 @@
-public class Long_common_prefix {
+public class longest_com_prefix {
     public static void main(String[] args) {
         String[] strs = { "flower", "flow", "flight" };
         String st = longest_Common_Prefix(strs);
-        // System.out.println(st);
+        System.out.println(st);
     }
     
     public static String longest_Common_Prefix(String[] strs) {
@@ -22,6 +22,6 @@ public class Long_common_prefix {
             }
             prefix.append(word);    
         }
-        return prefix.toString();        
-    }
+        return prefix.toString();
+    }   
 }
