@@ -6,22 +6,47 @@ public class longest_com_prefix {
     }
     
     public static String longest_Common_Prefix(String[] strs) {
-        // finding minimum length of String
+
+        if( strs.length == 0 ) return "";
+
+        // finding minimum length of string
         int minLength = Integer.MAX_VALUE;
         for (String str : strs) {
-            minLength = Math.min(minLength, str.length());    
+            minLength = Math.min(minLength, str.length());
         }
-        // now searching for common preffix
-        StringBuilder prefix = new StringBuilder();
+
+        // now searching for common prefix
+
+        String result = "";
         for (int i = 0; i < minLength; i++) {
+            // if( strs[i].isEmpty() ) return "";
             char word = strs[0].charAt(i);
-            for (int j = 0; j < strs.length; j++) {
-                if( strs[j].charAt(i) != word ){
-                    return prefix.toString();        
-                }   
+            for (String string : strs) {
+                if( string.charAt(i) != word ){
+                    return result;    
+                }
             }
-            prefix.append(word);    
+            result += word;
         }
-        return prefix.toString();
-    }   
+        return result;
+    }
+
+    //     // finding minimum length of String
+    //     int minLength = Integer.MAX_VALUE;
+    //     for (String str : strs) {
+    //         minLength = Math.min(minLength, str.length());    
+    //     }
+    //     // now searching for common preffix
+    //     StringBuilder prefix = new StringBuilder();
+    //     for (int i = 0; i < minLength; i++) {
+    //         char word = strs[0].charAt(i);
+    //         for (int j = 0; j < strs.length; j++) {
+    //             if( strs[j].charAt(i) != word ){
+    //                 return prefix.toString();        
+    //             }   
+    //         }
+    //         prefix.append(word);    
+    //     }
+    //     return prefix.toString();
+    // }   
 }
