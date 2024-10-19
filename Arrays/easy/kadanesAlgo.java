@@ -15,6 +15,7 @@ public class kadanesAlgo {
     }
     public static void main(String[] args) {
         kadanesAlgo obj = new kadanesAlgo();
-        obj.kda();
+        int result = obj.kda();
+        System.out.println(result);
     }
 }

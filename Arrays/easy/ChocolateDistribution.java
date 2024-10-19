@@ -1,5 +1,5 @@
 import java.util.*;
-public class chocolatedistribution {
+public class ChocolateDistribution {
     public static void main(String[] args) {
         int arr[] = { 2, 5, 8, 1, 3 };
         sort(0, arr.length-1, arr);
