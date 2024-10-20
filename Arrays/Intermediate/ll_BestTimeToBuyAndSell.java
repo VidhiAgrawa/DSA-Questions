@@ -1,6 +1,6 @@
 public class ll_BestTimeToBuyAndSell {
     public static void main(String[] args) {
-        int arr[] = { 7, 5, 1, 2, 6, 3 };
+        int arr[] = { 1,2,3,4,5 };
         int profit = maxProfit(arr);
         System.out.println(profit);
         
