@@ -24,7 +24,7 @@ public class PairSum {
                 i++;
             }
             else{
-                j++;
+                j--;
             }
         }
     }
