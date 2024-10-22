@@ -35,7 +35,7 @@ public class SearchInRotatedArrsay {
             return -1;
         }
         if( nums[mid] == target ){
-            // System.out.println( "Found at index:- " + mid );
+            System.out.println( "Found at index:- " + mid );
             return mid;
         }
         else if ( nums[mid] > target ){
