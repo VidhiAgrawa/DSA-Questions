@@ -3,17 +3,17 @@ public class Quick_sort {
 
         //create an unsorted array or take input from user 
         int arr[] = {  1, 5, 9, 3, 6, 0, -1 };
-
+        
         //create a function of quick sort
         Quick_Sort( arr, 0, arr.length - 1 );
     }
-
+    
     //in the given function we will pass parameters of array left = 0 and right = arr.length - 1
     static void Quick_Sort(int arr[], int left, int right){
 
         // we will write base condition for returning 
         if( left >= right ) return;
-
+        
         // we will take pivot in which we will create a partition funtion for parting an array in 2 parts 
         int pivot = partition( arr, left, right );
 
@@ -27,12 +27,13 @@ public class Quick_sort {
 
         // we will take pivot as the last index or last value
         int pivot = arr[high];
-
+        
         //then we will take index which will have the value of low
         int index = low;
-
+        
         //the we will run a for loop from low to high
         for (int i = low; i < high; i++) {
+            // int arr[] = { 1, 5, 9, 3, 6, 0, -1 };
 
             //the we will check that 
             if( arr[i] < pivot ){
