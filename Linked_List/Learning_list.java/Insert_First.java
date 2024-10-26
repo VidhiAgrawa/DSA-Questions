@@ -11,9 +11,13 @@ class LinkedList{
     LinkedList(){
         head = null;
     }
+    // for inserting element at first
     void insertFirst( int data ){
+        //create new node 
         Node newNode1 = new Node(data);
+        //connect next of new node to head
         newNode1.next = head;
+        // and make newnode a head
         head = newNode1;
     }
     void insert( int data ){
