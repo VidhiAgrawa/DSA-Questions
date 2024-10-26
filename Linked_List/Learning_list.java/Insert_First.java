@@ -20,6 +20,7 @@ class LinkedList{
         // and make newnode a head
         head = newNode1;
     }
+    // inserting elements
     void insert( int data ){
         Node newNode = new Node(data);
         if ( head == null ){
@@ -33,6 +34,7 @@ class LinkedList{
             temp.next = newNode;
         }
     }
+    // displaying elements
     void display(){
         Node temp = head;
         while ( temp != null ) {
