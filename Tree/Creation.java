@@ -1,4 +1,5 @@
 class Node{
+    
     int data;
     Node left, right;
 
@@ -8,10 +9,13 @@ class Node{
     }
 }
 class Tree{
+
     Node root;
+
     Tree(){
         root = null;
     }
+
     void create( int data ){
         Node node = new Node(data);
 
@@ -83,6 +87,7 @@ class Tree{
 public class Creation {
     public static void main(String[] args) {
         Tree newTree = new Tree();
+
         newTree.create(10);
         newTree.create(15);
         newTree.create(3);
