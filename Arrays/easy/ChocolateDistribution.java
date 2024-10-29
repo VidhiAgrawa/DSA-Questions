@@ -38,6 +38,7 @@ public class ChocolateDistribution {
         first = 0;
         int min = newArr[last] - newArr[first];
         System.out.println("\nMinimum differnce:- " + min);
+        System.out.println();
     }
 
 }
