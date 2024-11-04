@@ -8,8 +8,8 @@ public class Best_time_to_buy_and_Sell {
     
     public static int maxProfit(int arr[]) {
         if( arr == null || arr.length == 0 ) return 0;
-        int min = arr[0]; // 7 -> 3 -> 1
-        int maxProfit = 0; // 2 -> 6
+        int min = arr[0];
+        int maxProfit = 0; 
         for (int i = 0; i < arr.length; i++) {
             if( arr[i] < min ){
                 min = arr[i];
