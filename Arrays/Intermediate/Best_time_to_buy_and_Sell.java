@@ -14,8 +14,8 @@ public class Best_time_to_buy_and_Sell {
             if( arr[i] < min ){
                 min = arr[i];
             }
-            else if( arr[i] - min > maxProfit ){ //5-3=2 -> 9-3=6 -> 6-3=3
-                maxProfit = arr[i] - min;// 2
+            else if( arr[i] - min > maxProfit ){ 
+                maxProfit = arr[i] - min;
             }
         }
         return maxProfit;
