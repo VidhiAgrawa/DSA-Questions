@@ -9,7 +9,6 @@ public class Selection_sort {
                     arr[minIndex] = temp;
                 }
             }
-            
         }
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
