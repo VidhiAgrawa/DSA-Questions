@@ -1,5 +1,5 @@
-public class Bubble_sort {
-    static void bubble_sort(int arr[]){
+public class bubble_sort {
+    static void Bubble_sort(int arr[]){
         for (int i = 0; i < arr.length; i++) {
             for (int j = i; j < arr.length; j++) {
                 if( arr[i] > arr[j] ){
@@ -15,7 +15,7 @@ public class Bubble_sort {
     }
     public static void main(String[] args) {
         int arr[] = { 12, 10, 43, 76, 9, 5 };
-        bubble_sort(arr);
+        Bubble_sort(arr);
 
     }
 }
