@@ -6,7 +6,7 @@ public class Subarrays {
                 for (int k = i; k <= j; k++) {
                     System.out.print(arr[k]);
                 }
-                System.out.print(" ");
+                System.out.print(" -> ");
             }
             System.out.println();
         }
