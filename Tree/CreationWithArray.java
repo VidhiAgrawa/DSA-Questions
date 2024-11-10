@@ -1,35 +1,60 @@
+class Node{
+    int data;
+    Node left, right;
+
+    Node( int value ){
+        this.data = value;
+        this.left = this.right = null;
+    }
+}
+class Tree{
+    Node root;
+
+    Tree(){
+        root = null;
+    }
+
+    void TreeArr( int data ){
+        Node newNode = new Node(data);
+
+        if ( root == null ){
+            root = newNode;
+        }
+        else{
+            Node temp = root;
+
+            while( temp != null ){
+                if( data < temp.data ){
+                    if( temp.left == null ){
+                        temp.left = newNode;
+                        break;
+                    }
+                    temp = temp.left;
+                }
+                else if( data > temp.data ){
+                    if( temp.right == null ){
+                        temp.right = newNode;
+                        break;
+                    }
+                    temp = temp.right;
+                }
+                else{
+                    break;
+                }
+                
+            }
+        }
+    }
+}
+
+
+
 public class CreationWithArray {
-    int tree[];
-    int size;
-
-    CreationWithArray( int len ){
-        tree = new int[len];
-        size = 0;
-    }
-    void insert( int value ){
-        if( size > tree.length - 1 ){
-            throw new IndexOutOfBoundsException("Tree is full");
-        }
-        tree[size++] = value;
-    }
-
-    void printTree() {
-        for (int i = 0; i < size; i++) {
-            System.out.print(tree[i] + " ");
-        }
-        System.out.println();
-    }
-
     public static void main(String[] args) {
-        CreationWithArray tree = new CreationWithArray(7);
-        tree.insert(1);
-        tree.insert(2);
-        tree.insert(3);
-        tree.insert(4);
-        tree.insert(5);
-        tree.insert(6);
-        tree.insert(7);
-        
-        tree.printTree();
+        Tree tree = new Tree();
+        int arr[] = { 1, 2, 3, 4, 5, 6 };
+        for (int i = 0; i < arr.length; i++) {
+             tree.TreeArr(arr[i]);
+        }
     }
 }
