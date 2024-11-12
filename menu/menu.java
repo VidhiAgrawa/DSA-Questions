@@ -68,7 +68,7 @@ class all{
 
 public class menu {
     public static void main(String[] args) {  
-        System.out.println("hello sir welcome to our restaurant");
+        System.out.println("hello sir welcome to our restaurant you can make any order ");
         all m = new all();
         m.main();
     }
