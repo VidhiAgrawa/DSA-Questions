@@ -14,8 +14,6 @@ public class lll_bestTimeToBuyAndSell {
             if( arr[i] < arr[i+1] ){
                 int max = arr[i+1] - arr[i];
                 newArray[count++] = max;
-                // System.out.println("max:- " + max);
-
             }
             i++;
         }
