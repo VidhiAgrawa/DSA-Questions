@@ -7,7 +7,6 @@ class Node{
         this.next = null;
     }
 }
-
 // creating a linked list
 class linkedList{
     Node head;
@@ -43,11 +42,14 @@ class linkedList{
     }
     //deleting the last element
     void deleteLast(){
-        Node temp = head, nullNode = temp.next; 
-        while( temp.next != null ){
-            temp = temp.next;
+        Node parent = head;
+        Node child = parent.next;
+        while( child.next != null ){
+            parent = child;
+            child = child.next;
         }
-        temp = null;
+        parent.next = null;
+        child = null;
     }
     //displaying the element
     void display(){
