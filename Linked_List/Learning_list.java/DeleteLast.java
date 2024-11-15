@@ -43,6 +43,10 @@ class linkedList{
     }
     //displaying the elements
     void display(){
+        if (head == null) {
+            System.out.println("List is empty");
+            return;
+        }
         Node temp = head;
         while( temp != null ){
             System.out.print(temp.data + " -> ");
