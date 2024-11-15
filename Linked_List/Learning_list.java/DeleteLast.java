@@ -1,3 +1,4 @@
+//creating the node
 class Node{
     int data;
     Node next;
@@ -6,12 +7,13 @@ class Node{
         this.next = null;
     }
 }
+//creating the node
 class linkedList{
     Node head;
     linkedList(){
         head = null;
     }
-
+    //inserting an element in the list
     void insert( int data ){
         Node newNode = new Node(data);
         if( head == null ){
@@ -25,17 +27,21 @@ class linkedList{
             temp.next = newNode;
         }
     }
-
+    // deleting the last element on the list
     void deleteLast(){
+        //creating tht parent and child node
         Node parent = head;
         Node child = parent.next;
+        // traverse till you find the last node
         while( child.next != null ){
             parent = child;
             child = child.next;
         }
+        // if found then make last node null and connect the node before that to null 
         parent.next = null;
         child = null;
     }
+    //displaying the elements
     void display(){
         Node temp = head;
         while( temp != null ){
