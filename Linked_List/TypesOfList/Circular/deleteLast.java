@@ -1,38 +1,31 @@
 class Node{
     int data;
     Node next;
-    Node( int val ){
-        this.data = val;
+    Node( int value ){
+        this.data = value;
         this.next = null;
     }
 }
-class Circular_linkedList{
+class Circular{
     Node head;
-    Circular_linkedList(){
+    Circular(){
         head = null;
     }
+
     void insert( int data ){
-        Node newnode = new Node(data);
+        Node newNode = new Node(data);
         if( head == null ){
-            head = newnode;
-            newnode.next = head;
+            head = newNode;
+            newNode.next = head; 
         }
         else{
             Node temp = head;
             while( temp.next != head ){
-                temp = temp.next;
+                temp= temp.next;
             }
-            temp.next = newnode;
-            newnode.next = head;
+            temp.next = newNode;
+            newNode.next = head;
         }
-    }
-    void deleteFirst(){
-        Node temp = head;
-        while( temp.next != head ){
-            temp = temp.next;
-        }
-        temp.next = head.next;
-        head = temp.next;
     }
     void deleteLast(){
         Node temp = head;
@@ -40,31 +33,34 @@ class Circular_linkedList{
             temp = temp.next;
         }
         temp.next = head;
-        // head = temp.next;
     }
-    void display(){
-        if(head == null){
-            System.out.println("list is empty");
+    void display() {
+        if (head == null) {
+            System.out.println("List is empty");
+            return;
         }
         Node temp = head;
+        
+        // ** here loop stops at Null
+        // printing the loop values
         do{
             System.out.print(temp.data + " -> ");
             temp = temp.next;
         }
+        //here while temp is not equal to head
         while( temp != head );
-        System.out.println("back to head");
+        //if it is equal to the show back to head
+        System.out.print("back to head ");
     }
 }
-
-public class circularLinked_List {
+public class deleteLast {
     public static void main(String[] args) {
-        Circular_linkedList newList = new Circular_linkedList();
+        Circular newList = new Circular();
         newList.insert(0);
         newList.insert(1);
         newList.insert(2);
         newList.insert(3);
         newList.insert(4);
-        // newList.deleteFirst();
         newList.deleteLast();
         newList.display();
     }
