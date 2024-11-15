@@ -1,3 +1,4 @@
+//creating a node
 class Node{
     int data;
     Node next;
@@ -6,12 +7,13 @@ class Node{
         this.next = null;
     }
 }
+//creating a linked list
 class linkedList{
     Node head;
     linkedList(){
         head = null;
     }
-
+    //inserting an elements in the list
     void insert( int data ){
         Node newNode = new Node(data);
         if( head == null ){
@@ -25,12 +27,13 @@ class linkedList{
             temp.next = newNode;
         }
     }
-
+    // deleting the first element in the list
     void DeleteFirst(){
         Node temp = head;
         temp.next = head.next;
         head = temp.next;
     }
+    //displaying the element on the list
     void display(){
         Node temp = head;
         while( temp != null ){
