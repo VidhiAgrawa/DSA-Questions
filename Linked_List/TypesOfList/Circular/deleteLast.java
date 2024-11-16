@@ -45,12 +45,14 @@ class Circular{
         // printing the loop values
         do{
             System.out.print(temp.data + " -> ");
+            // System.out.println();
             temp = temp.next;
         }
         //here while temp is not equal to head
         while( temp != head );
-        //if it is equal to the show back to head
-        System.out.print("back to head ");
+            //if it is equal to the show back to head
+            System.out.print("back to head ");
+            
     }
 }
 public class deleteLast {

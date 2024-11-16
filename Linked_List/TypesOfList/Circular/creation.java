@@ -50,14 +50,17 @@ class Circular_LL{
         
         // ** here loop stops at Null
         // printing the loop values
+        int count = 0;
         do{
             System.out.print(temp.data + " -> ");
+            count++;
             temp = temp.next;
         }
         //here while temp is not equal to head
         while( temp != head );
         //if it is equal to the show back to head
         System.out.print("back to head ");
+        System.out.println(count);
     }
 }
 
