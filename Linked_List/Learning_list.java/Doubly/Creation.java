@@ -42,10 +42,10 @@ public class Creation {
     public static void main(String[] args) {
         Doubly_ll newList = new Doubly_ll();
         newList.insert(0);
-        newList.insert(1);
-        newList.insert(2);
-        newList.insert(3);
-        newList.insert(4);
-        newList.display();
+        // newList.insert(1);
+        // newList.insert(2);
+        // newList.insert(3);
+        // newList.insert(4);
+        // newList.display();
     }
 }
