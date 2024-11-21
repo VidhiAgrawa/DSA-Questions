@@ -7,9 +7,31 @@ class Node{
     }
 }
 class merging{
-    // Node merge(  ){
-        
-    // }
+    Node merge( Node head1, Node head2 ){
+        Node p1 = head1;
+        Node p2 = head2;
+        Node dummy = new Node(0);
+        Node p3 = null;
+        while( p1 != null && p2 != null  ){
+            if( p1.data < p2.data ){
+                p3.next = p1;
+                p1 = p1.next;
+            }
+            else{
+                p3.next = p2;
+                p2 = p2.next;
+            }
+            p3 = p3.next;
+        }
+        while ( p1 != null ) {
+            p3.next = p1;
+            p1 = p1.next;
+        }
+        while ( p2 != null ) {
+            p3.next = p2;
+            p2 = p2.next;
+        }
+    }
     Node insert( int arr[] ){
         Node head = null;
         for (int num : arr) {
@@ -27,6 +49,14 @@ class merging{
             
         }
         return head;
+    }
+    void display(Node head){
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " -> ");
+            temp = temp.next;
+        }
+        System.out.println("null");
     }
 }
 public class merge {
