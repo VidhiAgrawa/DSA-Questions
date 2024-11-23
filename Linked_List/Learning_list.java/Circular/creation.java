@@ -60,7 +60,7 @@ class Circular_LL{
         while( temp != head );
         //if it is equal to the show back to head
         System.out.print("back to head ");
-        System.out.println(count);
+        System.out.println("\n" + "No. of count :- " + count);
     }
 }
 

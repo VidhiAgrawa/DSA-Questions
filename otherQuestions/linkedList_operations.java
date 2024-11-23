@@ -70,8 +70,8 @@ public class linkedList_operations {
         newList.insert(1);
         newList.insert(2);
         newList.insert(3);
-        // newList.deleteFirst();
-        newList.deleteLast();
+        newList.deleteFirst();
+        // newList.deleteLast();
         newList.display();
     }
 }

@@ -64,7 +64,7 @@ public class circularLinked_List {
         newList.insert(2);
         newList.insert(3);
         newList.insert(4);
-        // newList.deleteFirst();
+        newList.deleteFirst();
         newList.deleteLast();
         newList.display();
     }
