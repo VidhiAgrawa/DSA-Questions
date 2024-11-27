@@ -14,7 +14,7 @@ public class Insertion_sort {
             }
         }
         for (int k = 0; k < arr.length; k++) {
-            System.out.println(arr[k]);
+            System.out.print(arr[k] + "\t");
         }
         
         // dry run of the given code   

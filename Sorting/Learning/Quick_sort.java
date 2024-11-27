@@ -2,7 +2,7 @@ public class Quick_sort {
     public static void main(String[] args) {
 
         //create an unsorted array or take input from user 
-        int arr[] = {  1, 5, 9, 3, 6, 0, -1 };
+        int arr[] = {  61, 5, 59, 23, 6, 0 };
         
         //create a function of quick sort
         Quick_Sort( arr, 0, arr.length - 1 );

@@ -2,7 +2,7 @@
 public class Merge_sort {
     // first we will gonna create a divide function 
     public static void main(String[] args) {
-        int arr[] = { 8 , 1 , 3 , 4 , 6 , 0 , 8 };
+        int arr[] = { 88 , 12 , 32 , 48 , 69 , 90 , 28 };
         divide(arr, 0, arr.length-1);
         for( int i = 0 ; i < arr.length ; i++ ) System.out.print(arr[i] + "\t");
     }
