@@ -44,18 +44,36 @@ class Tree{
 
         }
     }
+    void display() {
+        
+        // System.out.print("");
+        System.out.print("\nInorder Traversal: ");
+        // System.out.println("");
+        inorder(root);
+        System.out.println();
+    }
+
+    // Helper function for inorder traversal
+    private void inorder(Node node) {
+        if (node != null) {
+            inorder(node.left);
+            System.out.print(node.data + " ");
+            inorder(node.right);
+        }
+    }
 }   
 public class Creation {
     public static void main(String[] args) {
         Tree newTree = new Tree();
 
-        newTree.create(10);
+        newTree.create(12);
+        newTree.create(32);
         newTree.create(15);
-        newTree.create(3);
-        newTree.create(2);
         newTree.create(4);
+        newTree.create(65);
+        newTree.create(10);
+        newTree.create(9);
+        newTree.display();
 
-        // System.out.println("Tree printed in hierarchical form:");
-        // newTree.printTree(); // Print the tree in hierarchical format
     }
 }
