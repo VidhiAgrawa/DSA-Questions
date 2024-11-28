@@ -114,11 +114,11 @@ public class delete {
         newTree.display();
 
         newTree.delete(96); 
-        System.out.println("After Deleting 3:");
+        System.out.println("After Deleting 96:");
         newTree.display();
 
         newTree.delete(7); 
-        System.out.println("After Deleting 10:");
+        System.out.println("After Deleting 7:");
         newTree.display();
 
     }
