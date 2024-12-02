@@ -32,8 +32,8 @@ class linkedList{
         Node Node3 = new Node(30);
         Node2.next = Node3;
 
-        Node Node4 = new Node(40);
-        Node3.next = Node4;
+        // Node Node4 = new Node(40);
+        // Node3.next = Node4;
 
         Node4 = null;
 
