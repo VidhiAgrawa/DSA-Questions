@@ -1,0 +1,6 @@
+3. *Q. What is the main purpose of CSS?*
+   - A. To structure the web content
+   - B. To style the web content
+   - C. To add interactivity to the web content
+   - D. To create a database
+   - *Correct answer: B*

@@ -1,0 +1,6 @@
+5. *Q. Which of the following is a server-side scripting language?*
+   - A. JavaScript
+   - B. PHP
+   - C. CSS
+   - D. HTML
+   - *Correct answer: B*

@@ -1,0 +1,6 @@
+6. *Q. What does CSS stand for?*
+   - A. Computer Style Sheets
+   - B. Creative Style Sheets
+   - C. Cascading Style Sheets
+   - D. Colorful Style Sheets
+   - *Correct answer: C*

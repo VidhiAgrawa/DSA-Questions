@@ -1,0 +1,6 @@
+2. *Q. Which language is used for creating interactive web pages?*
+   - A. HTML
+   - B. CSS
+   - C. JavaScript
+   - D. PHP
+   - *Correct answer: C*

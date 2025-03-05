@@ -1,0 +1,6 @@
+4. *Q. Which language is considered the backbone of web development?*
+   - A. Java
+   - B. Python
+   - C. HTML
+   - D. C++
+   - *Correct answer: C*

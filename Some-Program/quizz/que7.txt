@@ -1,0 +1,6 @@
+7. *Q. Which language is used for client-side validation?*
+   - A. HTML
+   - B. CSS
+   - C. JavaScript
+   - D. PHP
+   - *Correct answer: C*

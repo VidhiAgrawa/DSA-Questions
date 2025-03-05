@@ -1,0 +1,6 @@
+1. *Q. What does HTML stand for?*
+   - A. Hyper Text Markup Language
+   - B. High Text Markup Language
+   - C. Hyperlinks and Text Markup Language
+   - D. Home Tool Markup Language
+   - *Correct answer: A*

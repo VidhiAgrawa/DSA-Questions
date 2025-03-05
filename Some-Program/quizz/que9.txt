@@ -1,0 +1,6 @@
+9. *Q. Which language is primarily used for styling web pages?*
+   - A. HTML
+   - B. CSS
+   - C. JavaScript
+   - D. Python
+   - *Correct answer: B*

@@ -1,0 +1,6 @@
+8. *Q. What is the correct syntax to include an external JavaScript file in an HTML document?*
+   - A. <script href="script.js"></script>
+   - B. <script src="script.js"></script>
+   - C. <script link="script.js"></script>
+   - D. <script ref="script.js"></script>
+   - *Correct answer: B*
